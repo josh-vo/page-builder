@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "typeRoots": [
+            "./source",
+            "../node_modules/@types"
+        ],
+        "noImplicitAny": false,
+        "jsx": "react"
+    },
+    "include": [
+        "source/**/*.ts",
+        "source/**/*.tsx"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "appID": 14,
+    "appName": "page-builder",
+    "type": "Customization",
+    "scope": "ALL",
+    "uploadConfig": {
+        "desktop": {
+            "js": [
+                "page-builder/dist/page-builder.min.js"
+            ],
+            "css": []
+        },
+        "mobile": {
+            "js": [
+                "page-builder/dist/page-builder.min.js"
+            ]
+        }
+    }
+}

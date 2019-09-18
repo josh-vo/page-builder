@@ -1,0 +1,42 @@
+{
+  "name": "page-builder",
+  "version": "0.0.1",
+  "description": "kintone customization project",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "local-web-server": "^2.6.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.2.3",
+    "babel-loader": "^8.0.5",
+    "style-loader": "^0.23.1",
+    "css-loader": "^2.1.0",
+    "core-js": "^3.2.1",
+    "regenerator-runtime": "^0.13.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/preset-react": "^7.0.0",
+    "typescript": "^2.3.3",
+    "tsc": "^1.20150623.0",
+    "@types/react": "^16.8.16",
+    "@types/react-dom": "^16.8.4",
+    "@kintone/customize-uploader": "^2.0.4",
+    "eslint": "^5.16.0",
+    "@cybozu/eslint-config": ">=5.0.1"
+  },
+  "scripts": {
+    "dev": "ws",
+    "build-page-builder": "webpack --config page-builder/webpack.config.js",
+    "lint-all": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint-all-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint-page-builder": "eslint page-builder/ --ext .tsx",
+    "lint-page-builder-fix": "eslint page-builder/ --ext .tsx --fix"
+  }
+}
