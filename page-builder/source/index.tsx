@@ -1,15 +1,10 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 
-const App = () => {
-  return <span>Hello from kintone CLI</span>;
-};
+import { BuilderLayout } from './builder';
 
 (() => {
-  kintone.events.on('app.record.index.show', event => {
-    'use strict';
-    ReactDOM.render(<App />, kintone.app.getHeaderSpaceElement());
-
-    return event;
+  kintone.events.on('app.record.index.show', () => {
+    render(<BuilderLayout />, kintone.app.getHeaderSpaceElement());
   });
 })();
